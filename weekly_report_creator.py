@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 import re
 
 if len(sys.argv) < 12:
-    print 'Too few arguments. Give your API key, HubID, Email account, Email Password, Outgoing mail server (SMTP), Email port (SMTP), From address, To address, Sorting property, Sorting property value, properties to be included in the report and corresponding property titles. For example: \n python weekly_report_creator.py demo 62515 testname paSSw0rd smtp.test.com 301 sender@gmail.com receiver@gmail.com status "Meeting booked" firstname,lastname,jobtitle,notes_next_activity_date,notes_last_updated,status "First name","Last name","Job title","Next meeting","Date when booked","Prospecting status"'
+    print 'Too few arguments. Give your API key, HubID, Email account, Email Password, Outgoing mail server (SMTP), Email port (SMTP), From address, To address, Sorting property, Sorting property value, properties to be included in the report and corresponding property titles. For example: \n python weekly_report_creator.py demo 62515 testname paSSw0rd smtp.test.com 587 sender@gmail.com receiver@gmail.com status "Meeting booked" firstname,lastname,jobtitle,notes_next_activity_date,notes_last_updated,status "First name","Last name","Job title","Next meeting","Date when booked","Prospecting status"'
     sys.exit(0)
 
 # Sorting property: Sorting property is the property that defines whether a contact will be included to the weekly report or not
