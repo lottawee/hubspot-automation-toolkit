@@ -10,7 +10,7 @@ import unicodedata
 # this code automatically changes the contact status from meeting scheduled to meeting held if the date of the next meeting has been passed
 
 if len(sys.argv) < 5:
-    print 'Too few arguments. Give your API key, HubID, a property label of the property you want to change, value to be changed and the new value. For example: \n python automatic_status_changer.py demo 62515 status "Meeting scheduled" "Meeting held"'
+    print 'Too few arguments. Give your API key, HubID, a property label of the property you want to change, value to be changed and the new value. For example: \n python automatic_status_updater.py demo 62515 status "Meeting scheduled" "Meeting held"'
     sys.exit(0)
 api_key = sys.argv[1]
 hub_id = sys.argv[2]
